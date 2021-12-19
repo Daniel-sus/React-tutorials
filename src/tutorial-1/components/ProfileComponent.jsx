@@ -30,8 +30,12 @@ const ProfileComponent = ({ name, registredAt }) => {
         Привет <b>{name.split(" ")[0]}!</b>
       </div>
       <div>
-        Дата регистрации: {registredAt.getDate()}{" "}
-        {monthToStr(registredAt.getMonth())} {registredAt.getFullYear()}
+        Дата регистрации:{" "}
+        {registredAt.toLocaleString("ru-RU", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
       </div>
     </div>
   );
