@@ -12,13 +12,17 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!email === true || !password === true) {
+    if (!email || !password) {
       alert("заполни email и password");
     } else {
-      console.log({ email, password });
-      email = "";
-      password = "";
-      event.target.reset();
+      if (email.indexOf(" ") >= 0 || password.indexOf(" ") >= 0) {
+        alert("Нельзя чтобы поле email или password содержало пробел");
+      } else {
+        console.log({ email, password });
+        email = undefined;
+        password = undefined;
+        event.target.reset();
+      }
     }
   };
 
