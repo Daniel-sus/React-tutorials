@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box1 {
+  width: 400px;
+  min-height: 30%;
+  max-height: 40%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.box2 {
+  width: 400px;
+  min-height: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}

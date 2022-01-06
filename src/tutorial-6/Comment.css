@@ -1,0 +1,39 @@
+.comment {
+  width: 100%;
+  height: 70px;
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  color: rgb(89, 89, 89);
+  margin-bottom: 10px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(167, 216, 138);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.text-wrapper {
+  flex: 1 auto;
+}
+.nickname {
+  font-weight: bold;
+}
+.remove {
+  width: 40px;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: rgb(206, 206, 206);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.1s ease-in-out;
+}
+.remove:hover {
+  background-color: rgb(227, 227, 227);
+}
