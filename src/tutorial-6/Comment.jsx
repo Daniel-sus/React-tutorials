@@ -2,13 +2,13 @@ import React from "react";
 import "../tutorial-6/Comment.css";
 
 const Comment = ({ createdAt, fullName, text, onRemove, gender, id }) => {
-  const formatedDate = createdAt.toLocaleDateString("ru", {
+  const formatedDate = new Date(createdAt).toLocaleDateString("ru", {
     weekday: "long",
     year: "numeric",
     month: "long",
     day: "numeric",
+    hour: "numeric",
     minute: "numeric",
-    second: "numeric",
   });
   return (
     <div>
