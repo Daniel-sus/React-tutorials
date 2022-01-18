@@ -85,6 +85,7 @@ const App = () => {
           value={user.email}
         />
         <TextField
+          className="about"
           style={{ width: "100%", marginBottom: "10px" }}
           id="outlined-basic"
           label="Текст"
@@ -94,12 +95,16 @@ const App = () => {
           value={user.text}
         />
         <div
-          style={{ display: "flex", marginBottom: "10px" }}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            marginBottom: "10px",
+          }}
           className="wrapper-gender"
         >
           <h4 style={{ margin: 0, padding: 0 }}>Выберите пол:</h4>
           <select
-            style={{ flex: "1 auto" }}
+            style={{ flex: "1 auto", marginTop: "6px" }}
             onChange={handleChangeInputs}
             value={user.gender}
             name="gender"

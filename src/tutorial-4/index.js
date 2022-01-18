@@ -14,7 +14,7 @@ const render = () => {
     note.append(remove);
     wrapper.append(note);
     remove.addEventListener("click", () => {
-      tasks = tasks.filter(function (elem, num) {
+      tasks = tasks.filter(function (_, num) {
         return num !== index;
       });
       wrapper.innerHTML = "";

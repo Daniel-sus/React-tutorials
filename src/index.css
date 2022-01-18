@@ -14,12 +14,16 @@ code {
 * {
   box-sizing: border-box;
 }
-
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding: 10px 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.g-4 {
+  margin-top: 20px;
+  width: 1080px;
+  padding: 5px 30px;
 }
